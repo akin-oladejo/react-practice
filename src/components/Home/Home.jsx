@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <>
-      <h1 className="text-3xl">React Practice by Dami</h1>
+      <h1 className="text-3xl">Converting Designs in React</h1>
 
       <div>
         <h2 className="text-2">Single-page Projects</h2>
