@@ -1,10 +1,11 @@
-import { useState } from "react";
 import "./App.css";
 import { Outlet } from "react-router-dom";
+import { RootHeader } from "./components";
 
 function App() {
   return (
     <>
+      <RootHeader/>
       <Outlet/>      
     </>
   );

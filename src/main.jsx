@@ -9,7 +9,7 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
-import { Home, Booking, Travel, ErrorPage } from "./components/index.js";
+import { Home, Booking, Travel, ErrorPage } from "./components/index";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
