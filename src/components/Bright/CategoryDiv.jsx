@@ -7,9 +7,9 @@ function CategoryDiv({
     startPrice
 }) {
   return (
-    <div className={`flex justify-center items-center col-start-${col} col-span-1 row-span-1 rounded-xl`} style={{backgroundImage: `url('${imgUrl}')`, backgroundSize: 'cover'}}>
-        {/* <div className=''>Starting from ₦{startPrice}</div> */}
-        <img className='place-self-end' width="40" height="40" src="https://img.icons8.com/pastel-glyph/64/000000/like--v2.png" alt="like--v2"/>
+    <div className={`flex relative justify-center items-center col-start-${col} col-span-1 row-span-1 rounded-xl`} style={{backgroundImage: `url('${imgUrl}')`, backgroundSize: 'cover'}}>
+        <div className='absolute top-4 left-4 text-white'>Starting from ₦{startPrice.toLocaleString()}</div>
+        <img className='absolute top-4 right-4' width="48" height="48" src="https://img.icons8.com/color-glass/48/like--v1.png" alt="like--v1"/>
         <div className='text-3xl font-bold text-white'>{mainText}</div>
     </div>
   )
