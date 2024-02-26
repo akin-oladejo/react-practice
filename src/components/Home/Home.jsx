@@ -17,15 +17,15 @@ function Home() {
       </div>
 
       <div className="my-2 flex flex-col items-start">
-        <h2 className="text-3xl font-bold">Multi-page Projects</h2>
-        <div className="text-2">3. Squarespace</div>
-        <div className="text-2">4. Cordyline</div>
-      </div>
-
-      <div className="my-2 flex flex-col items-start">
         <h2 className="text-3xl font-bold">API Apps</h2>
         <div className="text-2">5. RetroArt</div>
         <div className="text-2">6. Vehicle HMI</div>
+      </div>
+
+      <div className="my-2 flex flex-col items-start">
+        <h2 className="text-3xl font-bold">Multi-page Projects</h2>
+        <div className="text-2">3. Squarespace</div>
+        <div className="text-2">4. Cordyline</div>
       </div>
     </div>
   );
