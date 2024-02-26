@@ -15,16 +15,16 @@ export default function RootHeader() {
         Travel
       </NavLink>
 
-      {/* nav: Booking */}
+      {/* nav: Bright */}
       <NavLink
-        to="booking"
+        to="bright"
         className={`hover:text-gray-200 text-white px-5 py-1.5 ${({
           isActive
         }) =>
           isActive ? text-red-600 : ""}`
         }
       >
-        Booking
+        Bright
       </NavLink>
     </div>
   );

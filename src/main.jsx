@@ -9,15 +9,15 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
-import { Home, Booking, Travel, ErrorPage } from "./components/index";
+import { Home, BrightPage, TravelPage, ErrorPage } from "./components/index";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />} errorElement={<ErrorPage />}>
       <Route errorElement={<ErrorPage />}>
         <Route index element={<Home />} />
-        <Route path="booking" element={<Booking />} />
-        <Route path="travel" element={<Travel />} />
+        <Route path="bright" element={<BrightPage />} />
+        <Route path="travel" element={<TravelPage />} />
       </Route>
     </Route>
   )
