@@ -8,8 +8,9 @@ function TravelPage() {
       <TravelHeader />
       {/* container */}
       <div className="box-border flex object-center my-10 lg:max-h-60 items-center max-w-full">
+        \
         {/* left-side text */}
-        <div className="ps-48 basis-1/2">
+        <div className="ps-48">
           <div className="flex-col me-10 w-prose">
             <h1 className="text-6xl font-bold my-7">Travel</h1>
             <p className="text-lg text-gray-600 font-semibold">
