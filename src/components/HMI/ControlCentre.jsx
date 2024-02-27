@@ -1,14 +1,17 @@
 import React from "react";
 
-function ControlCentre() {
+function ControlCentre({
+  className
+}) {
   const now = new Date();
-  const hours = now.getHours().toString().padStart(2, "0");
-  const minutes = now.getMinutes().toString().padStart(2, "0");
+  // const hours = now.getHours().toString().padStart(2, "0");
+  // const minutes = now.getMinutes().toString().padStart(2, "0");
+  const time = now.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })
 
   return (
-    <div className="flex justify-between text-white px-10">
-      <div></div>
+    <div className={` ${className}`}>
 
+      {/* prompt for destination */}
       <label className="flex gap-2 items-center">
         Destination:
         <input
@@ -16,11 +19,11 @@ function ControlCentre() {
           placeholder="Enter a destination"
           name="destination"
           id=""
-          className="rounded-lg px-3 py-1 text-white bg-zinc-900 border-2"
+          className="rounded-lg px-3 py-1 text-white bg-zinc-900 border-[1px] border-slate-400"
         />
       </label>
 
-        {/* time, bluetooth icons */}
+      {/* time, bluetooth icons */}
       <div className="flex gap-2 items-center">
         <span>●●● 5G</span>
         <img
@@ -31,7 +34,7 @@ function ControlCentre() {
         />
         <span>16°C</span>
         <span>
-          {hours}:{minutes}
+          {time}
         </span>
       </div>
     </div>
