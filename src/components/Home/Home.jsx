@@ -18,14 +18,16 @@ function Home() {
 
       <div className="my-2 flex flex-col items-start">
         <h2 className="text-3xl font-bold">API Apps</h2>
-        <div className="text-2">5. RetroArt</div>
-        <div className="text-2">6. Vehicle HMI</div>
+        <NavLink to="/hmi" className="text-blue-700 hover:text-blue-500">
+          3. Vehicle HMI
+        </NavLink>
+        <div className="text-2">4. RetroArt</div>
       </div>
 
       <div className="my-2 flex flex-col items-start">
         <h2 className="text-3xl font-bold">Multi-page Projects</h2>
-        <div className="text-2">3. Squarespace</div>
-        <div className="text-2">4. Cordyline</div>
+        <div className="text-2">5. Squarespace</div>
+        <div className="text-2">6. Cordyline</div>
       </div>
     </div>
   );
