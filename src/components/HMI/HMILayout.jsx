@@ -6,7 +6,27 @@ function HMILayout({ className }) {
     <div className={` ${className}`}>
       {/* weather and Now playing */}
       <div className="flex flex-col basis-1/3">
-        <Card title={"Weather Today"} value={"16°C"} className={"basis-1/4"}></Card>
+        <Card title={"Weather Today"} value={"16°C"} className={"basis-1/4"}>
+          <div className="flex justify-between text-sm">
+            <div className="flex flex-col">
+              {/* precipitation */}
+              <p className="text-zinc-400">Precipitation</p>
+              <p className="font-bold">0%</p>
+            </div>
+
+            {/* humidity */}
+            <div className="flex flex-col">
+              <p className="text-zinc-400">Humidity</p>
+              <p className="font-bold">35%</p>
+            </div>
+
+            {/* wind */}
+            <div className="flex flex-col">
+              <p className="text-zinc-400"  >Wind</p>
+              <p className="font-bold">5km/h</p>
+            </div>
+          </div>
+        </Card>
         <Card
           title={"Now Playing"}
           value={"Hitboy x Smino"}
@@ -26,7 +46,7 @@ function HMILayout({ className }) {
         value={"Quick Controls"}
         className="basis-1/3"
       >
-        <div className="flex flex-col px-5">
+        <div className="flex flex-col">
           {/* lights */}
           <label>
             Lights
