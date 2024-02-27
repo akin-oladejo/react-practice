@@ -7,7 +7,7 @@ function HMILayout({ className }) {
       {/* weather and Now playing */}
       <div className="flex flex-col basis-1/3">
         <Card title={"Weather Today"} value={"16°C"} className={"basis-1/4"}>
-          <div className="flex justify-between text-sm">
+          <div className="flex gap-5 text-sm">
             <div className="flex flex-col">
               {/* precipitation */}
               <p className="text-zinc-400">Precipitation</p>
