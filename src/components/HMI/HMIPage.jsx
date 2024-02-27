@@ -11,7 +11,7 @@ function HMIPage() {
 
       <div className="grow ps-16">
         <ControlCentre className="flex justify-between text-white px-10 pt-5 w-full"/>
-        <HMILayout className="flex px-10 justify-around"/>
+        <HMILayout className="flex px-10 justify-around h-5/6"/>
       </div>
     </div>
   );
