@@ -14,7 +14,8 @@ function HMILayout({
 
           <Card
             title={"Today's Destination"}
-            value={"16°C"}
+            value={"Santa Monica"}
+            tags={['50km', 'shaq oneal', 'bathe']}
             className="basis-1/3"
           ></Card>
           <Card
