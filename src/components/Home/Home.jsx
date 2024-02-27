@@ -11,8 +11,8 @@ function Home() {
         <NavLink to="/travel" className="text-blue-700 hover:text-blue-500">
           1. Travel Page
         </NavLink>
-        <NavLink to="/booking" className="text-blue-700 hover:text-blue-500">
-          2. Booking Services
+        <NavLink to="/bright" className="text-blue-700 hover:text-blue-500">
+          2. Bright
         </NavLink>
       </div>
 
