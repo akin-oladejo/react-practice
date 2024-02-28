@@ -31,12 +31,12 @@ export default function RootHeader() {
           Bright
         </NavLink>
 
-        {/* <NavLink
+        <NavLink
           to="/hmi"
           className={`hover:text-red-200  text-white ${({ isActive }) =>
             isActive ? "active text-red-600" : "text-white"}`
           }
-        >HMI</NavLink> */}
+        >HMI</NavLink>
 
 <NavLink
           to="retroart"
