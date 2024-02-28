@@ -10,6 +10,7 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import { Home, BrightPage, TravelPage, ErrorPage, HMIPage } from "./components/index";
+import RetroArtPage from "./components/RetroArt/RetroArtPage.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -19,6 +20,7 @@ const router = createBrowserRouter(
         <Route path="bright" element={<BrightPage />} />
         <Route path="travel" element={<TravelPage />} />
         <Route path="hmi" element={<HMIPage />} />
+        <Route path="retroart" element={<RetroArtPage />} />
       </Route>
     </Route>
   )

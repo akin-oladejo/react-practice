@@ -8,16 +8,15 @@ export default function RootHeader() {
       {/* nav: Home */}
       <NavLink
         to={"/"}
-        className={`hover:text-gray-200 text-white px-5 py-1.5 self-start`}
-      >
-        Home
+        className={`hover:text-gray-200 text-white  py-1.5 self-start`}
+      >Home
       </NavLink>
 
-      <div className="flex px-5 py-1.5 justify-center">
+      <div className="flex  py-1.5 gap-8 justify-center">
         {/* nav: Travel */}
         <NavLink
           to="/travel"
-          className={`hover:text-red-200 px-5 text-white ${({ isActive }) =>
+          className={`hover:text-red-200 text-white ${({ isActive }) =>
             isActive ? "text-yellow-300 border-white" : "text-red-500"}`}
         >
           Travel
@@ -26,18 +25,25 @@ export default function RootHeader() {
         {/* nav: Bright */}
         <NavLink
           to="/bright"
-          className={`hover:text-red-200 px-5 text-white ${({ isActive }) =>
+          className={`hover:text-red-200  text-white ${({ isActive }) =>
             isActive ? "text-red-600" : "text-white"}`}
         >
           Bright
         </NavLink>
 
-        <NavLink
+        {/* <NavLink
           to="/hmi"
-          className={`hover:text-red-200 px-5 text-white ${({ isActive }) =>
+          className={`hover:text-red-200  text-white ${({ isActive }) =>
             isActive ? "active text-red-600" : "text-white"}`
           }
-        >HMI</NavLink>
+        >HMI</NavLink> */}
+
+<NavLink
+          to="retroart"
+          className={`hover:text-red-200  text-white ${({ isActive }) =>
+            isActive ? "active text-red-600" : "text-white"}`
+          }
+        >RetroArt</NavLink>
       </div>
 
       <svg

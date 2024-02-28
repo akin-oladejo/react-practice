@@ -21,7 +21,9 @@ function Home() {
         <NavLink to="/hmi" className="text-blue-700 hover:text-blue-500">
           3. Vehicle HMI
         </NavLink>
-        <div className="text-2">4. RetroArt</div>
+        <NavLink to="/retroart" className="text-blue-700 hover:text-blue-500">
+          4. RetroArt
+        </NavLink>
       </div>
 
       <div className="my-2 flex flex-col items-start">
