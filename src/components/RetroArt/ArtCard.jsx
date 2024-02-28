@@ -7,17 +7,22 @@ function ArtCard({
   converted = 400,
 }) {
   return (
+    // the background of the div is the art's image
     <div
       style={{ backgroundImage: `url('${imgUrl}')`, backgroundSize: "contain" }}
-      className="relative w-72 h-96"
+      className="relative w-72 h-80"
     >
-      <div className="absolute bottom-0 w-full bg-emerald-700 p-6 text-white">
+      <div className="absolute bottom-0 w-full backdrop-blur-[1px]  py-4 px-6 text-white">
         <div className="uppercase text-xl font-bold">{title}</div>
         <div className="text-zinc-300 text-xs">Reserve Price</div>
         <div className="flex gap-1 items-center">
+
+            {/* cost in naira and dollars */}
           <div className="text-lg font-bold">₦{amount.toLocaleString()}</div>
           <div className="text-sm font-thin">(${converted})</div>
         </div>
+
+        {/* buttons to place bid */}
         <div className="flex text-sm gap-3 mt-2">
           <button className="bg-black py-3 px-4 hover:text-emerald-300">Place a Bid</button>
           <button className="border-[1px] px-2 py-3 hover:text-emerald-300">View Artwork</button>

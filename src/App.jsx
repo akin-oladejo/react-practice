@@ -4,7 +4,7 @@ import { RootHeader } from "./components";
 
 function App() {
   return (
-    <div className="max-w-screen h-screen">
+    <div className="max-w-screen h-screen pb-10">
       <RootHeader/>
       <Outlet/>      
     </div>
